@@ -21,6 +21,7 @@
     "typescript": "5.5.4"
   },
   "scripts": {
+    "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
