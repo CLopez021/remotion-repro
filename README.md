@@ -20,7 +20,7 @@ This document outlines the steps to reproduce an error encountered when using Re
    npx remotion lambda sites create src/index.ts --site-name=my-name
    ```
 
-3. Attempt to render a composition:
+3. Attempt to render a composition with an incorrect site (note that the behavior has been the same with any command that triggers and error, but this is the simplest example):
    ```
    npx remotion lambda render https://fake.com MyComp
    ```
