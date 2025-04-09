@@ -26,7 +26,7 @@ This document outlines the steps to reproduce an error encountered when using Re
    ```
 
 ## Unintended Behavior
-Error loops infinitely as seen in discord messages/ AWS console
+Error loops infinitely as seen in discord messages/ AWS console, async event age continously increasing.
 
 ## Additional Information
 
