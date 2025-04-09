@@ -1,54 +1,40 @@
-# Remotion video
+# Error Reproduction Guide: Remotion Lambda
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+This document outlines the steps to reproduce an error encountered when using Remotion Lambda.
 
-Welcome to your Remotion project!
+## Prerequisites
 
-## Commands
+- Node.js installed
+- AWS credentials configured
+- Remotion CLI installed
 
-**Install Dependencies**
+## Steps to Reproduce
 
-```console
-npm i
-```
+1. Deploy Lambda functions:
+   ```
+   npx remotion lambda functions deploy
+   ```
 
-**Start Preview**
+2. Create a Remotion site:
+   ```
+   npx remotion lambda sites create src/index.ts --site-name=my-name
+   ```
 
-```console
-npm run dev
-```
+3. Attempt to render a composition:
+   ```
+   npx remotion lambda render https://fake.com MyComp
+   ```
 
-**Render video**
+## Expected Behavior
 
-```console
-npx remotion render
-```
+[Describe what should happen when these commands run successfully]
 
-**Upgrade Remotion**
+## Actual Behavior
 
-```console
-npx remotion upgrade
-```
+[Describe the error that occurs when following these steps]
 
-## Docs
+## Additional Information
 
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+- Remotion version: [Your Remotion version]
+- Node.js version: [Your Node.js version]
+- Operating System: macOS 23.5.0
